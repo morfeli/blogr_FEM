@@ -1,0 +1,60 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+// Header Section
+
+header {
+  height: 600px;
+  background-image: url("../images/bg-pattern-intro.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav__container {
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  &--heading {
+    margin-left: 1rem;
+  }
+}
+
+.landing__container {
+  margin: 0 auto;
+  width: 75vw;
+  text-align: center;
+  &--title {
+    margin-bottom: 1rem;
+  }
+  &--description {
+    margin-bottom: 5rem;
+  }
+}
+
+.landing__button {
+  text-align: center;
+}
+
+.blogr__phonebox {
+  &--img {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+.free__container {
+  &--img {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+.future__container {
+  &--img {
+    width: 20%;
+    height: 20%;
+  }
+}
