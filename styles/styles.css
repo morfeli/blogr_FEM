@@ -31,20 +31,28 @@
 }
 
 header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to bottom, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 120px;
+}
+
+.test {
   height: 600px;
   background-image: url("../images/bg-pattern-intro.svg");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 700px;
 }
 
 .nav__container {
-  margin-top: 2rem;
+  padding-top: 2rem;
   margin-bottom: 7rem;
+  color: white;
 }
 
 .nav__container--heading {
   margin-left: 1rem;
+  font-family: "Overpass SemiBold";
 }
 
 .landing__container {
@@ -81,6 +89,7 @@ main {
 }
 
 .future__heading {
+  margin-top: 3rem;
   text-align: center;
   font-family: "Overpass SemiBold";
   color: #1f3f5b;

@@ -9,18 +9,25 @@
 // Header Section
 
 header {
+  background: linear-gradient(to bottom, $verylight-red, $lightred);
+  border-bottom-left-radius: 120px;
+}
+
+.test {
   height: 600px;
   background-image: url("../images/bg-pattern-intro.svg");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 700px;
 }
 
 .nav__container {
-  margin-top: 2rem;
+  padding-top: 2rem;
   margin-bottom: 7rem;
+  color: $white-text;
   &--heading {
     margin-left: 1rem;
+    font-family: $overpass-semibold-font;
   }
 }
 
@@ -55,6 +62,7 @@ main {
   height: 1086px;
 }
 .future__heading {
+  margin-top: 3rem;
   text-align: center;
   font-family: $overpass-semibold-font;
   color: $darkblue-headingtext;
