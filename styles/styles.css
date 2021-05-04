@@ -5,6 +5,31 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Overpass Regular";
+  src: url("../Fonts/Overpass/Overpass-Light.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Overpass SemiBold";
+  src: url("../Fonts/Overpass/Overpass-SemiBold.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../Fonts/Ubuntu/Ubuntu-Regular.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url("../Fonts/Ubuntu/Ubuntu-Medium.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Overpass Bold";
+  src: url("../Fonts/Ubuntu/Ubuntu-Bold.ttf") format(woff2);
+}
+
 header {
   height: 600px;
   background-image: url("../images/bg-pattern-intro.svg");
@@ -45,7 +70,7 @@ main {
 }
 
 .future__heading {
-  text-align: center;
+  font-family: "Overpass SemiBold";
 }
 
 .future__container {
@@ -80,6 +105,10 @@ main {
 
 .future__container--description {
   line-height: 2rem;
+}
+
+.blogr__phonebox {
+  text-align: center;
 }
 
 .blogr__phonebox--img {

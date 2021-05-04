@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+@import "partial";
+
 // Header Section
 
 header {
@@ -43,7 +45,8 @@ main {
   height: 1086px;
 }
 .future__heading {
-  text-align: center;
+  //   text-align: center;
+  font-family: $overpass-semibold-font;
 }
 
 .future__container {
@@ -73,12 +76,16 @@ main {
     line-height: 2rem;
   }
 }
+
+//  Blogr Phones
 .blogr__phonebox {
+  text-align: center;
   &--img {
     width: 328px;
     height: 347px;
   }
 }
+// State of the Art
 
 .free__container {
   &--img {

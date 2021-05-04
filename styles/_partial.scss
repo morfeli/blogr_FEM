@@ -1,0 +1,59 @@
+//  Font Color Variables
+$white-text: hsl(0, 0%, 100%);
+$darkgray-blue-bodytext: hsl(207, 13%, 34%);
+$darkblue-headingtext: hsl(208, 49%, 24%);
+$cta-text: hsl(356, 100%, 66%);
+$footer-text: hsl(240, 2%, 79%);
+
+//  Background Color Variables
+$darkblack-blue-footer-bckgrd: hsl(240, 10%, 16%);
+$cta-hover-background: hsl(355, 100%, 74%);
+
+//  Gradient BckgrdColor Variables - Intro/CTA Mobile Nav
+$verylight-red: hsl(13, 100%, 72%);
+$lightred: hsl(353, 100%, 62%);
+
+//  Gradient BckgrdColor Variables - Body
+$verydark-gray-blue: hsl(237, 17%, 21%);
+$verydark-desatu-blue: hsl(237, 23%, 32%);
+
+// Font-Family Variables
+$overpass-reg-font: "Overpass Regular";
+$overpass-semibold-font: "Overpass SemiBold";
+$ubuntu-reg-font: "Ubuntu Regular";
+$ubuntu-med-font: "Ubuntu Medium";
+$ubuntu-bold-font: "Ubuntu Bold";
+
+//  Font-Face Variables
+@font-face {
+  font-family: "Overpass Regular";
+  src: url("../Fonts/Overpass/Overpass-Light.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Overpass SemiBold";
+  src: url("../Fonts/Overpass/Overpass-SemiBold.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url("../Fonts/Ubuntu/Ubuntu-Regular.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url("../Fonts/Ubuntu/Ubuntu-Medium.ttf") format(woff2);
+}
+
+@font-face {
+  font-family: "Overpass Bold";
+  src: url("../Fonts/Ubuntu/Ubuntu-Bold.ttf") format(woff2);
+}
+
+//  Media Query
+$desktop: 1440px;
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
