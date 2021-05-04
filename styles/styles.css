@@ -51,18 +51,29 @@ header {
   margin: 0 auto;
   width: 75vw;
   text-align: center;
+  color: white;
 }
 
 .landing__container--title {
   margin-bottom: 1rem;
+  font-family: "Overpass SemiBold";
 }
 
 .landing__container--description {
   margin-bottom: 5rem;
+  font-family: "Overpass Regular";
 }
 
 .landing__button {
   text-align: center;
+}
+
+.landing__button--start {
+  font-family: "Overpass SemiBold";
+}
+
+.landing__button--learn {
+  font-family: "Overpass SemiBold";
 }
 
 main {
@@ -70,7 +81,9 @@ main {
 }
 
 .future__heading {
+  text-align: center;
   font-family: "Overpass SemiBold";
+  color: #1f3f5b;
 }
 
 .future__container {
@@ -85,8 +98,6 @@ main {
 
 .future__container--textbox {
   text-align: center;
-  width: 80vw;
-  margin: 0 auto;
 }
 
 .future__container--textbox1 {
@@ -101,10 +112,19 @@ main {
   margin-bottom: 1rem;
   line-height: 2rem;
   letter-spacing: 1px;
+  font-family: "Overpass SemiBold";
+  color: #1f3f5b;
+  width: 85vw;
+  margin: 0 auto;
 }
 
 .future__container--description {
-  line-height: 2rem;
+  line-height: 1.5rem;
+  width: 75vw;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: "Ubuntu Regular";
+  color: #4b5862;
 }
 
 .blogr__phonebox {
