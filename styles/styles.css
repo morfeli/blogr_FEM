@@ -40,17 +40,45 @@ header {
   text-align: center;
 }
 
+.future__heading {
+  text-align: center;
+}
+
+.future__container--img {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.future__container--textbox {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.future__container--textbox1 {
+  margin-bottom: 2rem;
+}
+
+.future__container--textbox2 {
+  margin-bottom: 2rem;
+}
+
+.future__container--title {
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.future__container--description {
+  line-height: 2rem;
+}
+
 .blogr__phonebox--img {
   width: 20%;
   height: 20%;
 }
 
 .free__container--img {
-  width: 20%;
-  height: 20%;
-}
-
-.future__container--img {
   width: 20%;
   height: 20%;
 }
