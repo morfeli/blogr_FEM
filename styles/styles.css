@@ -188,12 +188,17 @@ main {
 
 footer {
   margin-top: 5rem;
+  padding-top: 5rem;
   height: 800px;
   text-align: center;
+  background-color: #25252d;
+  color: white;
+  border-top-right-radius: 80px;
 }
 
 .footer__heading {
   margin-bottom: 3rem;
+  font-family: "Overpass SemiBold";
 }
 
 .footer__container {
@@ -208,6 +213,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: "Ubuntu Medium";
 }
 
 .footer__container--title {
@@ -216,5 +222,6 @@ footer {
 
 .footer__container--li {
   margin-bottom: 1rem;
+  color: #c8c8cb;
 }
 /*# sourceMappingURL=styles.css.map */

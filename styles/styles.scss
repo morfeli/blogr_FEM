@@ -157,12 +157,17 @@ main {
 // Footer
 footer {
   margin-top: 5rem;
+  padding-top: 5rem;
   height: 800px;
   text-align: center;
+  background-color: $darkblack-blue-footer-bckgrd;
+  color: $white-text;
+  border-top-right-radius: 80px;
 }
 
 .footer__heading {
   margin-bottom: 3rem;
+  font-family: $overpass-semibold-font;
 }
 
 .footer__container {
@@ -170,10 +175,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: $ubuntu-med-font;
   &--title {
     margin-bottom: 2rem;
   }
   &--li {
     margin-bottom: 1rem;
+    color: $footer-text;
   }
 }
