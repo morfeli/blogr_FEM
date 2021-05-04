@@ -129,30 +129,48 @@ main {
 
 .blogr__phonebox {
   text-align: center;
+  margin-top: -12rem;
 }
 
 .blogr__phonebox--img {
   width: 328px;
   height: 347px;
+  position: relative;
+  top: 185px;
+}
+
+.state__container {
+  height: 625px;
+  margin-bottom: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2c2d3f), to(#3f4164));
+  background: linear-gradient(to bottom, #2c2d3f, #3f4164);
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
 }
 
 .state__container--textbox {
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 500px;
   margin: 0 auto;
   text-align: center;
   width: 90vw;
+  color: white;
 }
 
 .state__container--title {
   width: 85vw;
   margin-bottom: 1rem;
+  padding-top: 10rem;
   font-family: "Overpass SemiBold";
 }
 
 .state__container--description {
-  width: 80vw;
+  width: 71vw;
   margin: 0 auto;
   line-height: 1.7rem;
-  font-family: "Ubuntu Regular";
+  font-family: "Ubuntu Medium";
 }
 
 .free__container {
@@ -213,7 +231,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Ubuntu Medium";
 }
 
 .footer__container--title {
