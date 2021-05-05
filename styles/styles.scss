@@ -23,7 +23,7 @@ header {
 }
 
 .nav__container {
-  width: 90vw;
+  width: 95vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +77,8 @@ header {
   }
 }
 
+//  Menu Icon
+
 input[type="checkbox"] {
   display: none;
   visibility: hidden;
@@ -85,8 +87,11 @@ input[type="checkbox"] {
 .hamburger {
   position: relative;
   cursor: pointer;
-  display: flex;
+  display: none;
   justify-content: center;
+  @include mobile {
+    display: flex;
+  }
 }
 
 .middle {
@@ -136,15 +141,35 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   transform: translateX(20px);
   opacity: 0;
 }
+// Nav Links
 
-// .line {
-//   width: 30px;
-//   height: 3px;
-//   background: white;
-//   margin: 5px;
-//   cursor: pointer;
-// }
+.nav__links {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  @include mobile {
+    display: none;
+  }
+  //   @include desktop {
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  &--dropdownli {
+    list-style: none;
+  }
+}
 
+.login__container {
+  @include mobile {
+    display: none;
+  }
+}
+
+.log-in {
+  text-decoration: none;
+  color: $white-text;
+}
 //  Designed for the future
 main {
   height: 1086px;

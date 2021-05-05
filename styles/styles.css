@@ -46,7 +46,7 @@ header {
 }
 
 .nav__container {
-  width: 90vw;
+  width: 95vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,12 +116,18 @@ input[type="checkbox"] {
 .hamburger {
   position: relative;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .middle {
@@ -178,6 +184,37 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   opacity: 0;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+  .nav__links {
+    display: none;
+  }
+}
+
+.nav__links--dropdownli {
+  list-style: none;
+}
+
+@media (max-width: 375px) {
+  .login__container {
+    display: none;
+  }
+}
+
+.log-in {
+  text-decoration: none;
+  color: white;
 }
 
 main {
