@@ -5,6 +5,7 @@
 }
 
 @import "partial";
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
 
 // Header Section
 
@@ -43,7 +44,7 @@ header {
   }
   &--description {
     margin-bottom: 5rem;
-    font-family: $overpass-reg-font;
+    font-family: "Overpass", sans-serif;
   }
 }
 
@@ -104,7 +105,7 @@ main {
     letter-spacing: 1px;
     font-family: $overpass-semibold-font;
     color: $darkblue-headingtext;
-    width: 85vw;
+    width: 70vw;
     margin: 0 auto;
   }
   &--description {
@@ -112,7 +113,7 @@ main {
     width: 75vw;
     margin: 0 auto;
     padding-top: 20px;
-    font-family: $ubuntu-reg-font;
+    font-family: "Overpass", sans-serif;
     color: $darkgray-blue-bodytext;
   }
 }
@@ -130,6 +131,13 @@ main {
 }
 
 // State of The Art Infrastructure
+
+.test2 {
+  background-image: url("../images/bg-pattern-circles.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 600px;
+}
 .state__container {
   height: 625px;
   margin-bottom: 2rem;
@@ -141,15 +149,12 @@ main {
   );
   border-top-right-radius: 120px;
   border-bottom-left-radius: 120px;
+
   &--textbox {
-    background-image: url("../images/bg-pattern-circles.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 500px;
-    margin: 0 auto;
     text-align: center;
     width: 90vw;
     color: $white-text;
+    margin: 0 auto;
   }
   &--title {
     width: 85vw;
@@ -161,7 +166,7 @@ main {
     width: 71vw;
     margin: 0 auto;
     line-height: 1.7rem;
-    font-family: $ubuntu-med-font;
+    font-family: "Overpass", sans-serif;
   }
 }
 
@@ -171,8 +176,7 @@ main {
   text-align: center;
 
   &--img {
-    width: 327px;
-    height: 323px;
+    width: 375px;
   }
   &--textbox {
     margin: 0 auto;
@@ -191,6 +195,7 @@ main {
     margin: 0 auto;
     line-height: 1.7rem;
     color: $darkgray-blue-bodytext;
+    font-family: "Overpass", sans-serif;
   }
 }
 
@@ -215,11 +220,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Overpass", sans-serif;
+
   &--title {
     margin-bottom: 2rem;
   }
   &--li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: $footer-text;
   }
 }
