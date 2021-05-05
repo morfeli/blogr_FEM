@@ -78,10 +78,23 @@ header {
 
 .landing__button--start {
   font-family: "Overpass SemiBold";
+  width: 100px;
+  height: 40px;
+  border-radius: 33px;
+  background-color: white;
+  border: none;
+  color: #ff525d;
 }
 
 .landing__button--learn {
   font-family: "Overpass SemiBold";
+  width: 100px;
+  height: 40px;
+  border-radius: 33px;
+  border: 1px solid white;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
 }
 
 main {

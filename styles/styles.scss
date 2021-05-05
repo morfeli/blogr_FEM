@@ -49,11 +49,25 @@ header {
 
 .landing__button {
   text-align: center;
+
   &--start {
     font-family: $overpass-semibold-font;
+    width: 100px;
+    height: 40px;
+    border-radius: 33px;
+    background-color: white;
+    border: none;
+    color: $cta-text;
   }
   &--learn {
     font-family: $overpass-semibold-font;
+    width: 100px;
+    height: 40px;
+    border-radius: 33px;
+    border: 1px solid white;
+    background-color: transparent;
+    text-decoration: none;
+    color: $white-text;
   }
 }
 
