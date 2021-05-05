@@ -23,9 +23,14 @@ header {
 }
 
 .nav__container {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 2rem;
   margin-bottom: 7rem;
   color: $white-text;
+
   &--heading {
     margin-left: 1rem;
     font-family: $overpass-semibold-font;
@@ -71,6 +76,74 @@ header {
     color: $white-text;
   }
 }
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .hamburger .top {
+  transform: rotate(-50deg);
+  width: 25px;
+  transform-origin: right;
+  top: -10px;
+}
+
+input[type="checkbox"]:checked ~ .hamburger .bottom {
+  transform: rotate(50deg);
+  width: 25px;
+  transform-origin: right;
+  top: 10px;
+}
+
+input[type="checkbox"]:checked ~ .hamburger .middle {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+// .line {
+//   width: 30px;
+//   height: 3px;
+//   background: white;
+//   margin: 5px;
+//   cursor: pointer;
+// }
 
 //  Designed for the future
 main {
