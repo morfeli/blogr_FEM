@@ -194,27 +194,69 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 375px) {
   .nav__links {
-    display: none;
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    top: 50px;
+    left: -100%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    background-color: white;
+    color: black;
   }
 }
 
+.nav__links .nav__links__active {
+  left: 0;
+}
+
 .nav__links--dropdownli {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
 @media (max-width: 375px) {
+  .nav__links--dropdownli {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 375px) {
   .login__container {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .log-in {
   text-decoration: none;
-  color: white;
+}
+
+@media (max-width: 375px) {
+  .log-in {
+    color: black;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 }
 
 main {

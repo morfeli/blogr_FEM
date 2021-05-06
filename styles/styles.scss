@@ -147,28 +147,49 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   display: flex;
   width: 40vw;
   justify-content: space-between;
+  align-items: center;
   @include mobile {
-    display: none;
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    background-color: white;
+    color: black;
   }
-  //   @include desktop {
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //   }
+  .nav__links__active {
+    left: 0;
+  }
+
   &--dropdownli {
+    align-items: center;
     list-style: none;
+    @include mobile {
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+    }
   }
 }
 
 .login__container {
   @include mobile {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .log-in {
   text-decoration: none;
-  color: $white-text;
+  @include mobile {
+    color: black;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
 }
 //  Designed for the future
 main {
