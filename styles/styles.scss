@@ -202,6 +202,18 @@ a {
   }
 }
 
+.signup-btn {
+  width: 30vw;
+  height: 6vh;
+  border-radius: 40px;
+  background-color: $cta-text;
+  color: white;
+  margin: 0 auto;
+  font-family: $ubuntu-med-font;
+  outline: none;
+  border: 0px;
+}
+
 //  Designed for the future
 main {
   height: 1086px;
