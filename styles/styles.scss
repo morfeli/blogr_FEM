@@ -151,7 +151,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   @include mobile {
     position: absolute;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
     top: 50px;
     left: 0px;
     transition: 0.5s;
@@ -161,6 +161,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     margin-left: 2.5rem;
     background-color: white;
     color: black;
+    border-radius: 5px;
   }
 
   li {
@@ -179,7 +180,7 @@ a {
   text-align: center;
 }
 
-.menu-arrow {
+#menu-arrow {
   float: right;
   position: relative;
   right: 100px;
@@ -212,6 +213,20 @@ a {
   font-family: $ubuntu-med-font;
   outline: none;
   border: 0px;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.sub-menu.open {
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-text;
+  width: 60vw;
+  margin: 0 auto;
+  color: $darkblue-headingtext;
+  border-radius: 5px;
 }
 
 //  Designed for the future
