@@ -153,7 +153,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     width: 80vw;
     height: 70vh;
     top: 50px;
-    left: -100%;
+    left: 0px;
     transition: 0.5s;
     display: block;
     text-align: center;
@@ -162,18 +162,28 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     background-color: white;
     color: black;
   }
-  .nav__links__active {
-    left: 0;
-  }
 
-  &--dropdownli {
+  li {
     align-items: center;
     list-style: none;
     @include mobile {
       margin-top: 1rem;
-      margin-bottom: 2.5rem;
+      //   margin-bottom: 2.5rem;
     }
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.menu-arrow {
+  float: right;
+  position: relative;
+  right: 100px;
+  top: 5px;
 }
 
 .login__container {
@@ -191,6 +201,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     margin-top: 1rem;
   }
 }
+
 //  Designed for the future
 main {
   height: 1086px;
