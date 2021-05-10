@@ -202,10 +202,9 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 @media (max-width: 375px) {
   .nav__links {
     position: absolute;
+    top: 50px;
     width: 80vw;
     height: 80vh;
-    top: 50px;
-    left: 0px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     display: block;
