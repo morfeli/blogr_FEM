@@ -1,8 +1,8 @@
 const arrowButton = document.querySelectorAll(".menu-arrow");
-const subMenu = document.querySelector(".sub-menu");
 
 arrowButton.forEach((el) =>
-  el.addEventListener("click", () => {
+  el.addEventListener("click", (event) => {
+    const subMenu = event.target.parentElement.querySelector(".sub-menu");
     subMenu.classList.toggle("open");
   })
 );

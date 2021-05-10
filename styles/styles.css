@@ -231,6 +231,15 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   }
 }
 
+.parent {
+  margin-bottom: 2rem;
+}
+
+.divider {
+  width: 60vw;
+  margin: 2rem auto;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -264,7 +273,6 @@ a {
   .log-in {
     color: black;
     margin-bottom: 2rem;
-    margin-top: 1rem;
   }
 }
 
@@ -294,7 +302,8 @@ a {
           flex-direction: column;
   background-color: #c8c8cb;
   width: 60vw;
-  margin: 0 auto;
+  margin: 1rem auto;
+  padding: 0.7rem;
   color: #1f3f5b;
   border-radius: 5px;
 }

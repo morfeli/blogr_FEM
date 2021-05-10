@@ -169,9 +169,17 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     list-style: none;
     @include mobile {
       margin-top: 1rem;
-      //   margin-bottom: 2.5rem;
     }
   }
+}
+
+.parent {
+  margin-bottom: 2rem;
+}
+
+.divider {
+  width: 60vw;
+  margin: 2rem auto;
 }
 
 a {
@@ -199,7 +207,6 @@ a {
   @include mobile {
     color: black;
     margin-bottom: 2rem;
-    margin-top: 1rem;
   }
 }
 
@@ -224,7 +231,8 @@ a {
   flex-direction: column;
   background-color: $footer-text;
   width: 60vw;
-  margin: 0 auto;
+  margin: 1rem auto;
+  padding: 0.7rem;
   color: $darkblue-headingtext;
   border-radius: 5px;
 }
