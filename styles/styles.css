@@ -428,6 +428,7 @@ a {
     background-color: white;
     color: black;
     text-align: left;
+    position: absolute;
   }
 }
 

@@ -214,6 +214,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   @include desktop {
     display: inline-block;
     margin-right: 2rem;
+    // position: absolute;
   }
 }
 
@@ -319,6 +320,7 @@ a {
     background-color: white;
     color: black;
     text-align: left;
+    position: absolute;
   }
 }
 
