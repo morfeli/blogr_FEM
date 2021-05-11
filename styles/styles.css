@@ -119,12 +119,18 @@ header {
   background-color: white;
   border: none;
   color: #ff525d;
+  cursor: pointer;
 }
 
 @media (min-width: 1440px) {
   .landing__button--start {
     margin-right: 0.5rem;
   }
+}
+
+.landing__button--start:hover {
+  color: white;
+  background-color: #ff7a85;
 }
 
 .landing__button--learn {
@@ -136,6 +142,12 @@ header {
   background-color: transparent;
   text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+
+.landing__button--learn:hover {
+  background-color: white;
+  color: #ff525d;
 }
 
 input[type="checkbox"] {
@@ -254,15 +266,18 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 }
 
 .nav__links li {
+  font-family: "Overpass SemiBold";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
   .nav__links li {
     margin-top: 1rem;
+    color: #1f3f5b;
   }
 }
 
@@ -277,6 +292,15 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     display: inline-block;
     margin-right: 2rem;
   }
+}
+
+.parent a:hover {
+  border-bottom: 2px solid white;
+}
+
+.sub-menu li:hover {
+  color: #4b5862;
+  font-family: "Overpass SemiBold";
 }
 
 @media (max-width: 375px) {
@@ -294,8 +318,14 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #1f3f5b;
   text-align: center;
+}
+
+@media (min-width: 1440px) {
+  a {
+    color: white;
+  }
 }
 
 #menu-arrow {
@@ -319,11 +349,12 @@ a {
 
 .log-in {
   text-decoration: none;
+  font-family: "Overpass SemiBold";
 }
 
 @media (max-width: 375px) {
   .log-in {
-    color: black;
+    color: #1f3f5b;
     margin-bottom: 2rem;
   }
 }
@@ -338,6 +369,7 @@ a {
 .signup-btn {
   font-family: "Ubuntu Medium";
   border: 0px;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
@@ -363,6 +395,13 @@ a {
   }
 }
 
+@media (min-width: 1440px) {
+  .signup-btn:hover {
+    background-color: #ff7a85;
+    color: white;
+  }
+}
+
 .sub-menu {
   display: none;
 }
@@ -381,6 +420,15 @@ a {
   padding: 0.7rem;
   color: #1f3f5b;
   border-radius: 5px;
+}
+
+@media (min-width: 1440px) {
+  .sub-menu.open {
+    width: 8vw;
+    background-color: white;
+    color: black;
+    text-align: left;
+  }
 }
 
 .future__heading {
@@ -486,6 +534,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: -30rem;
   }
 }
 
