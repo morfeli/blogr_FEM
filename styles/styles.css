@@ -383,10 +383,6 @@ a {
   border-radius: 5px;
 }
 
-main {
-  height: 1086px;
-}
-
 .future__heading {
   margin-top: 3rem;
   text-align: center;
@@ -508,6 +504,12 @@ main {
   border-bottom-left-radius: 120px;
 }
 
+@media (min-width: 1440px) {
+  .state__container {
+    height: 400px;
+  }
+}
+
 .state__container--textbox {
   text-align: center;
   width: 90vw;
@@ -563,16 +565,32 @@ main {
 footer {
   margin-top: 5rem;
   padding-top: 5rem;
-  height: 800px;
   text-align: center;
   background-color: #25252d;
   color: white;
   border-top-right-radius: 80px;
 }
 
+@media (min-width: 1440px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer__heading {
   margin-bottom: 3rem;
   font-family: "Overpass SemiBold";
+}
+
+@media (min-width: 1440px) {
+  .footer__heading {
+    margin-left: 6rem;
+  }
 }
 
 .footer__container {
@@ -590,6 +608,18 @@ footer {
   font-family: "Overpass", sans-serif;
 }
 
+@media (min-width: 1440px) {
+  .footer__container {
+    height: 300px;
+    width: 60vw;
+    margin-left: 10rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer__container--title {
   margin-bottom: 2rem;
 }
@@ -597,5 +627,11 @@ footer {
 .footer__container--li {
   margin-bottom: 0.5rem;
   color: #c8c8cb;
+}
+
+@media (min-width: 1440px) {
+  .footer__container--li {
+    list-style: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

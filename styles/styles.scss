@@ -281,9 +281,7 @@ a {
 }
 
 //  Designed for the future
-main {
-  height: 1086px;
-}
+
 .future__heading {
   margin-top: 3rem;
   text-align: center;
@@ -384,6 +382,9 @@ main {
   );
   border-top-right-radius: 120px;
   border-bottom-left-radius: 120px;
+  @include desktop {
+    height: 400px;
+  }
 
   &--textbox {
     text-align: center;
@@ -438,16 +439,22 @@ main {
 footer {
   margin-top: 5rem;
   padding-top: 5rem;
-  height: 800px;
   text-align: center;
   background-color: $darkblack-blue-footer-bckgrd;
   color: $white-text;
   border-top-right-radius: 80px;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__heading {
   margin-bottom: 3rem;
   font-family: $overpass-semibold-font;
+  @include desktop {
+    margin-left: 6rem;
+  }
 }
 
 .footer__container {
@@ -456,6 +463,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   font-family: "Overpass", sans-serif;
+  @include desktop {
+    height: 300px;
+    width: 60vw;
+    margin-left: 10rem;
+    flex-direction: row;
+  }
 
   &--title {
     margin-bottom: 2rem;
@@ -463,5 +476,8 @@ footer {
   &--li {
     margin-bottom: 0.5rem;
     color: $footer-text;
+    @include desktop {
+      list-style: none;
+    }
   }
 }
