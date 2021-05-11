@@ -481,11 +481,28 @@ a {
   margin-top: -12rem;
 }
 
+@media (min-width: 1440px) {
+  .blogr__phonebox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .blogr__phonebox--img {
   width: 328px;
   height: 347px;
   position: relative;
   top: 185px;
+}
+
+@media (min-width: 1440px) {
+  .blogr__phonebox--img {
+    width: 472px;
+    height: 499px;
+    top: 410px;
+    left: 105px;
+  }
 }
 
 .test2 {
@@ -535,13 +552,38 @@ a {
   text-align: center;
 }
 
+@media (min-width: 1440px) {
+  .free__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .free__container--img {
   width: 375px;
+}
+
+@media (min-width: 1440px) {
+  .free__container--img {
+    width: 50vw;
+    position: relative;
+    right: 202px;
+  }
 }
 
 .free__container--textbox {
   margin: 0 auto;
   width: 90vw;
+}
+
+@media (min-width: 1440px) {
+  .free__container--textbox {
+    text-align: left;
+  }
 }
 
 .free__container--textbox1 {
@@ -560,6 +602,14 @@ a {
   line-height: 1.7rem;
   color: #4b5862;
   font-family: "Overpass", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  .free__container--description {
+    width: 35vw;
+    text-align: left;
+    margin: 0rem;
+  }
 }
 
 footer {
