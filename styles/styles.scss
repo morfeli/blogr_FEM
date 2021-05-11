@@ -32,8 +32,15 @@ header {
   color: $white-text;
 
   &--heading {
-    margin-left: 1rem;
     font-family: $overpass-semibold-font;
+
+    @include mobile {
+      margin-left: 1rem;
+    }
+    @include desktop {
+      margin-left: 5rem;
+      font-size: 3rem;
+    }
   }
 }
 
@@ -46,10 +53,16 @@ header {
   &--title {
     margin-bottom: 1rem;
     font-family: $overpass-semibold-font;
+    @include desktop {
+      font-size: 4rem;
+    }
   }
   &--description {
     margin-bottom: 5rem;
     font-family: "Overpass", sans-serif;
+    @include desktop {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -64,6 +77,9 @@ header {
     background-color: white;
     border: none;
     color: $cta-text;
+    @include desktop {
+      margin-right: 0.5rem;
+    }
   }
   &--learn {
     font-family: $overpass-semibold-font;
@@ -162,6 +178,9 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     color: black;
     border-radius: 5px;
   }
+  @include desktop {
+    width: 70vw;
+  }
 
   li {
     align-items: center;
@@ -173,12 +192,23 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 }
 
 .parent {
-  margin-bottom: 2rem;
+  @include mobile {
+    margin-bottom: 2rem;
+  }
+  @include desktop {
+    display: inline-block;
+    margin-right: 2rem;
+  }
 }
 
 .divider {
-  width: 60vw;
-  margin: 2rem auto;
+  @include mobile {
+    width: 60vw;
+    margin: 2rem auto;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 a {
@@ -207,18 +237,32 @@ a {
     color: black;
     margin-bottom: 2rem;
   }
+  @include desktop {
+    color: white;
+    padding-right: 2rem;
+  }
 }
 
 .signup-btn {
-  width: 30vw;
-  height: 6vh;
-  border-radius: 40px;
-  background-color: $cta-text;
-  color: white;
-  margin: 0 auto;
   font-family: $ubuntu-med-font;
-  outline: none;
   border: 0px;
+  @include mobile {
+    width: 30vw;
+    height: 6vh;
+    border-radius: 40px;
+    background-color: $cta-text;
+    color: white;
+    margin: 0 auto;
+    outline: none;
+  }
+  @include desktop {
+    width: 8vw;
+    height: 4.2vh;
+    border-radius: 20px;
+    background-color: white;
+    color: $cta-text;
+    border: 0px;
+  }
 }
 
 .sub-menu {
@@ -245,17 +289,39 @@ main {
   text-align: center;
   font-family: $overpass-semibold-font;
   color: $darkblue-headingtext;
+  @include desktop {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
 }
 
 .future__container {
-  padding-bottom: 2.5rem;
+  overflow: hidden;
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
   &--img {
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    @include mobile {
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    @include desktop {
+      width: 50vw;
+      position: relative;
+      left: 12rem;
+    }
   }
   &--textbox {
-    text-align: center;
+    @include mobile {
+      text-align: center;
+    }
+    @include desktop {
+      //   margin-top: 5rem;
+      //   margin-left: 13rem;
+    }
   }
   &--textbox1 {
     margin-bottom: 2rem;
@@ -269,16 +335,21 @@ main {
     letter-spacing: 1px;
     font-family: $overpass-semibold-font;
     color: $darkblue-headingtext;
-    width: 70vw;
     margin: 0 auto;
   }
   &--description {
-    line-height: 1.5rem;
-    width: 75vw;
-    margin: 0 auto;
-    padding-top: 20px;
     font-family: "Overpass", sans-serif;
     color: $darkgray-blue-bodytext;
+    padding-top: 20px;
+    @include mobile {
+      line-height: 1.5rem;
+      width: 75vw;
+      margin: 0 auto;
+    }
+    @include desktop {
+      width: 35vw;
+      text-align: left;
+    }
   }
 }
 

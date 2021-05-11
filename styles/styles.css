@@ -62,8 +62,20 @@ header {
 }
 
 .nav__container--heading {
-  margin-left: 1rem;
   font-family: "Overpass SemiBold";
+}
+
+@media (max-width: 375px) {
+  .nav__container--heading {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav__container--heading {
+    margin-left: 5rem;
+    font-size: 3rem;
+  }
 }
 
 .landing__container {
@@ -78,9 +90,21 @@ header {
   font-family: "Overpass SemiBold";
 }
 
+@media (min-width: 1440px) {
+  .landing__container--title {
+    font-size: 4rem;
+  }
+}
+
 .landing__container--description {
   margin-bottom: 5rem;
   font-family: "Overpass", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  .landing__container--description {
+    font-size: 1.5rem;
+  }
 }
 
 .landing__button {
@@ -95,6 +119,12 @@ header {
   background-color: white;
   border: none;
   color: #ff525d;
+}
+
+@media (min-width: 1440px) {
+  .landing__button--start {
+    margin-right: 0.5rem;
+  }
 }
 
 .landing__button--learn {
@@ -217,6 +247,12 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   }
 }
 
+@media (min-width: 1440px) {
+  .nav__links {
+    width: 70vw;
+  }
+}
+
 .nav__links li {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -230,13 +266,30 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   }
 }
 
-.parent {
-  margin-bottom: 2rem;
+@media (max-width: 375px) {
+  .parent {
+    margin-bottom: 2rem;
+  }
 }
 
-.divider {
-  width: 60vw;
-  margin: 2rem auto;
+@media (min-width: 1440px) {
+  .parent {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .divider {
+    width: 60vw;
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .divider {
+    display: none;
+  }
 }
 
 a {
@@ -275,16 +328,39 @@ a {
   }
 }
 
+@media (min-width: 1440px) {
+  .log-in {
+    color: white;
+    padding-right: 2rem;
+  }
+}
+
 .signup-btn {
-  width: 30vw;
-  height: 6vh;
-  border-radius: 40px;
-  background-color: #ff525d;
-  color: white;
-  margin: 0 auto;
   font-family: "Ubuntu Medium";
-  outline: none;
   border: 0px;
+}
+
+@media (max-width: 375px) {
+  .signup-btn {
+    width: 30vw;
+    height: 6vh;
+    border-radius: 40px;
+    background-color: #ff525d;
+    color: white;
+    margin: 0 auto;
+    outline: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .signup-btn {
+    width: 8vw;
+    height: 4.2vh;
+    border-radius: 20px;
+    background-color: white;
+    color: #ff525d;
+    border: 0px;
+  }
 }
 
 .sub-menu {
@@ -318,18 +394,52 @@ main {
   color: #1f3f5b;
 }
 
+@media (min-width: 1440px) {
+  .future__heading {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+}
+
 .future__container {
-  padding-bottom: 2.5rem;
+  overflow: hidden;
 }
 
-.future__container--img {
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+@media (min-width: 1440px) {
+  .future__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.future__container--textbox {
-  text-align: center;
+@media (max-width: 375px) {
+  .future__container--img {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .future__container--img {
+    width: 50vw;
+    position: relative;
+    left: 12rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .future__container--textbox {
+    text-align: center;
+  }
 }
 
 .future__container--textbox1 {
@@ -346,17 +456,28 @@ main {
   letter-spacing: 1px;
   font-family: "Overpass SemiBold";
   color: #1f3f5b;
-  width: 70vw;
   margin: 0 auto;
 }
 
 .future__container--description {
-  line-height: 1.5rem;
-  width: 75vw;
-  margin: 0 auto;
-  padding-top: 20px;
   font-family: "Overpass", sans-serif;
   color: #4b5862;
+  padding-top: 20px;
+}
+
+@media (max-width: 375px) {
+  .future__container--description {
+    line-height: 1.5rem;
+    width: 75vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .future__container--description {
+    width: 35vw;
+    text-align: left;
+  }
 }
 
 .blogr__phonebox {
