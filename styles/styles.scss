@@ -339,6 +339,7 @@ a {
 
 .future__container {
   overflow: hidden;
+  text-align: center;
   @include desktop {
     display: flex;
     flex-direction: row-reverse;
@@ -378,16 +379,16 @@ a {
     font-family: $overpass-semibold-font;
     color: $darkblue-headingtext;
     margin: 0 auto;
+    width: 80vw;
   }
   &--description {
     font-family: "Overpass", sans-serif;
     color: $darkgray-blue-bodytext;
     padding-top: 20px;
-    @include mobile {
-      line-height: 1.5rem;
-      width: 75vw;
-      margin: 0 auto;
-    }
+    line-height: 1.5rem;
+    width: 75vw;
+    margin: 0 auto;
+
     @include desktop {
       width: 35vw;
       text-align: left;

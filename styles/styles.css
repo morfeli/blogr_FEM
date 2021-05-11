@@ -448,6 +448,7 @@ a {
 
 .future__container {
   overflow: hidden;
+  text-align: center;
 }
 
 @media (min-width: 1440px) {
@@ -502,20 +503,16 @@ a {
   font-family: "Overpass SemiBold";
   color: #1f3f5b;
   margin: 0 auto;
+  width: 80vw;
 }
 
 .future__container--description {
   font-family: "Overpass", sans-serif;
   color: #4b5862;
   padding-top: 20px;
-}
-
-@media (max-width: 375px) {
-  .future__container--description {
-    line-height: 1.5rem;
-    width: 75vw;
-    margin: 0 auto;
-  }
+  line-height: 1.5rem;
+  width: 75vw;
+  margin: 0 auto;
 }
 
 @media (min-width: 1440px) {
