@@ -70,12 +70,7 @@ header {
 
 .nav__container--heading {
   font-family: "Overpass SemiBold";
-}
-
-@media (max-width: 375px) {
-  .nav__container--heading {
-    margin-left: 1rem;
-  }
+  margin-left: 1rem;
 }
 
 @media (min-width: 1440px) {
@@ -402,6 +397,11 @@ a {
   font-family: "Ubuntu Medium";
   border: 0px;
   cursor: pointer;
+  width: 8vw;
+  height: 4.2vh;
+  border-radius: 20px;
+  background-color: white;
+  color: #ff525d;
 }
 
 @media (max-width: 375px) {
@@ -413,17 +413,6 @@ a {
     color: white;
     margin: 0 auto;
     outline: none;
-  }
-}
-
-@media (min-width: 1440px) {
-  .signup-btn {
-    width: 8vw;
-    height: 4.2vh;
-    border-radius: 20px;
-    background-color: white;
-    color: #ff525d;
-    border: 0px;
   }
 }
 
@@ -451,7 +440,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 6px auto;
   padding-left: 0.3rem;
   border-radius: 5px;
 }

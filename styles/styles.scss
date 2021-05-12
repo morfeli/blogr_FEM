@@ -37,10 +37,8 @@ header {
 
   &--heading {
     font-family: $overpass-semibold-font;
+    margin-left: 1rem;
 
-    @include mobile {
-      margin-left: 1rem;
-    }
     @include desktop {
       margin-left: 5rem;
       font-size: 3rem;
@@ -289,6 +287,11 @@ a {
   font-family: $ubuntu-med-font;
   border: 0px;
   cursor: pointer;
+  width: 8vw;
+  height: 4.2vh;
+  border-radius: 20px;
+  background-color: white;
+  color: $cta-text;
   @include mobile {
     width: 30vw;
     height: 6vh;
@@ -297,14 +300,6 @@ a {
     color: white;
     margin: 0 auto;
     outline: none;
-  }
-  @include desktop {
-    width: 8vw;
-    height: 4.2vh;
-    border-radius: 20px;
-    background-color: white;
-    color: $cta-text;
-    border: 0px;
   }
 }
 
@@ -340,7 +335,7 @@ a {
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 6px auto;
   padding-left: 0.3rem;
   border-radius: 5px;
 }
