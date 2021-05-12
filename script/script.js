@@ -48,3 +48,10 @@ window.addEventListener("resize", resizeLaptopImg);
 //   }
 // };
 // window.addEventListener("resize", changeArrowImg);
+
+window.addEventListener("mouseup", (e) => {
+  let menu = document.querySelector(".sub-menu.open");
+  if (e.target != document.querySelector(".sub-menu.open")) {
+    menu.style.display = "none";
+  }
+});
