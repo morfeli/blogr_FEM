@@ -60,9 +60,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding-top: 2rem;
   margin-bottom: 7rem;
   color: white;
@@ -164,6 +164,7 @@ input[type="checkbox"] {
 
 .hamburger {
   position: relative;
+  top: -7px;
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -261,7 +262,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     margin-top: 5rem;
     margin-left: 2.5rem;
     background-color: white;
-    color: black;
+    color: white;
     border-radius: 5px;
   }
 }
@@ -283,8 +284,33 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 
 @media (max-width: 375px) {
   .nav__links li {
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     color: #1f3f5b;
+  }
+}
+
+.desktop__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 5px;
+}
+
+@media (max-width: 375px) {
+  .desktop__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -310,10 +336,6 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   font-family: "Overpass SemiBold";
 }
 
-.divider {
-  display: none;
-}
-
 @media (max-width: 375px) {
   .divider {
     width: 60vw;
@@ -323,13 +345,13 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 
 a {
   text-decoration: none;
-  color: #1f3f5b;
+  color: white;
   text-align: center;
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 375px) {
   a {
-    color: white;
+    color: #1f3f5b;
   }
 }
 
@@ -412,6 +434,11 @@ a {
 }
 
 .sub-menu.open {
+  position: absolute;
+  width: 10vw;
+  background-color: white;
+  color: black;
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,21 +446,27 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #c8c8cb;
-  width: 60vw;
-  margin: 1rem auto;
-  padding: 0.7rem;
-  color: #1f3f5b;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 375px) {
   .sub-menu.open {
-    width: 8vw;
-    background-color: white;
-    color: black;
-    text-align: left;
-    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #c8c8cb;
+    width: 60vw;
+    margin: 0 auto;
+    color: #1f3f5b;
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    text-align: center;
   }
 }
 
