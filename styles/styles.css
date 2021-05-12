@@ -355,11 +355,18 @@ a {
   }
 }
 
-#menu-arrow {
-  float: right;
-  position: relative;
-  right: 100px;
-  top: 5px;
+.menu-arrow-down {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.menu-arrow-down.open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 @media (max-width: 375px) {

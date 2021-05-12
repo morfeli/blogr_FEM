@@ -256,11 +256,14 @@ a {
   }
 }
 
-#menu-arrow {
-  float: right;
-  position: relative;
-  right: 100px;
-  top: 5px;
+.menu-arrow-down {
+  transform: rotate(0deg);
+  transition: 0.3s linear;
+}
+
+.menu-arrow-down.open {
+  transform: rotate(180deg);
+  transition: 0.3s linear;
 }
 
 .login__container {
@@ -315,6 +318,16 @@ a {
 }
 
 .sub-menu.open {
+  position: absolute;
+  width: 10vw;
+  background-color: white;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 6px auto;
+  padding-left: 0.3rem;
+  border-radius: 5px;
   @include mobile {
     display: flex;
     flex-direction: column;
@@ -327,17 +340,6 @@ a {
     left: 5px;
     text-align: center;
   }
-
-  position: absolute;
-  width: 10vw;
-  background-color: white;
-  color: black;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  margin: 6px auto;
-  padding-left: 0.3rem;
-  border-radius: 5px;
 }
 
 //  Designed for the future
