@@ -242,9 +242,11 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 
 .divider {
   @include mobile {
+    visibility: visible;
     width: 60vw;
     margin: 2rem auto;
   }
+  visibility: hidden;
 }
 
 a {
@@ -339,7 +341,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
+  padding-left: 0.3rem;
   border-radius: 5px;
 }
 
