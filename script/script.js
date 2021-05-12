@@ -37,20 +37,21 @@ const resizeLaptopImg = () => {
 };
 window.addEventListener("resize", resizeLaptopImg);
 
-// const changeArrowImg = () => {
-//   const reswidth = screen.width;
-//   for (const image of document.querySelectorAll(".menu-arrow")) {
-//     if (reswidth >= 1440) {
-//       image.src = "../images/icon-arrow-light.svg";
-//     } else {
-//       image.src = "../images/icon-arrow-dark.svg";
-//     }
-//   }
-// };
-// window.addEventListener("resize", changeArrowImg);
+const changeArrowImg = () => {
+  const reswidth = screen.width;
+  for (const image of document.querySelectorAll(".menu-arrow")) {
+    if (reswidth >= 1440) {
+      image.src = "../images/icon-arrow-light.svg";
+    } else {
+      image.src = "../images/icon-arrow-dark.svg";
+    }
+  }
+};
+window.addEventListener("resize", changeArrowImg);
 
 window.addEventListener("mouseup", (e) => {
   let menu = document.querySelector(".sub-menu.open");
+  console.log(menu);
   if (e.target != document.querySelector(".sub-menu.open")) {
     menu.style.display = "none";
   }
