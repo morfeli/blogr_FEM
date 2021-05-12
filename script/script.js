@@ -28,7 +28,7 @@ window.addEventListener("resize", resizeEditiorImg);
 
 const resizeLaptopImg = () => {
   const reswidth = screen.width;
-  let image = document.parentElement.querySelector(".free__container--img");
+  let image = document.querySelector(".free__container--img");
   if (reswidth >= 1440) {
     image.src = "../images/illustration-laptop-desktop.svg";
   } else {

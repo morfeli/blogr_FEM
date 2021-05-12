@@ -45,6 +45,13 @@ header {
   background-size: 700px;
 }
 
+@media (min-width: 1440px) {
+  .test {
+    background-position: 25% 52%;
+    background-size: 3233px;
+  }
+}
+
 .nav__container {
   width: 95vw;
   display: -webkit-box;
@@ -158,10 +165,10 @@ input[type="checkbox"] {
 .hamburger {
   position: relative;
   cursor: pointer;
-  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 
 @media (max-width: 375px) {
@@ -303,16 +310,14 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   font-family: "Overpass SemiBold";
 }
 
+.divider {
+  display: none;
+}
+
 @media (max-width: 375px) {
   .divider {
     width: 60vw;
     margin: 2rem auto;
-  }
-}
-
-@media (min-width: 1440px) {
-  .divider {
-    display: none;
   }
 }
 
@@ -466,9 +471,12 @@ a {
   }
 }
 
+.future__container--img {
+  width: 375px;
+}
+
 @media (max-width: 375px) {
   .future__container--img {
-    width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -488,6 +496,12 @@ a {
   }
 }
 
+@media (min-width: 1440px) {
+  .future__container--textbox {
+    text-align: left;
+  }
+}
+
 .future__container--textbox1 {
   margin-bottom: 2rem;
 }
@@ -503,7 +517,6 @@ a {
   font-family: "Overpass SemiBold";
   color: #1f3f5b;
   margin: 0 auto;
-  width: 80vw;
 }
 
 .future__container--description {
@@ -559,6 +572,13 @@ a {
   background-size: 600px;
 }
 
+@media (min-width: 1440px) {
+  .test2 {
+    background-position: -47% 66%;
+    background-size: 990px;
+  }
+}
+
 .state__container {
   height: 625px;
   margin-bottom: 2rem;
@@ -581,6 +601,13 @@ a {
   margin: 0 auto;
 }
 
+@media (min-width: 1440px) {
+  .state__container--textbox {
+    width: 0px;
+    text-align: left;
+  }
+}
+
 .state__container--title {
   width: 85vw;
   margin-bottom: 1rem;
@@ -588,11 +615,23 @@ a {
   font-family: "Overpass SemiBold";
 }
 
+@media (min-width: 1440px) {
+  .state__container--title {
+    width: 23vw;
+  }
+}
+
 .state__container--description {
   width: 71vw;
   margin: 0 auto;
   line-height: 1.7rem;
   font-family: "Overpass", sans-serif;
+}
+
+@media (min-width: 1440px) {
+  .state__container--description {
+    width: 35vw;
+  }
 }
 
 .free__container {
@@ -729,6 +768,16 @@ footer {
 @media (min-width: 1440px) {
   .footer__container--li {
     list-style: none;
+  }
+}
+
+.footer__container--li:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .footer__container--li:hover {
+    border-bottom: 2px solid white;
   }
 }
 /*# sourceMappingURL=styles.css.map */

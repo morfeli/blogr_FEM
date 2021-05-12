@@ -20,6 +20,10 @@ header {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 700px;
+  @include desktop {
+    background-position: 25% 52%;
+    background-size: 3233px;
+  }
 }
 
 .nav__container {
@@ -116,8 +120,8 @@ input[type="checkbox"] {
 .hamburger {
   position: relative;
   cursor: pointer;
-  display: none;
   justify-content: center;
+  display: none;
   @include mobile {
     display: flex;
   }
@@ -214,7 +218,6 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   @include desktop {
     display: inline-block;
     margin-right: 2rem;
-    // position: absolute;
   }
 }
 
@@ -227,12 +230,10 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 }
 
 .divider {
+  display: none;
   @include mobile {
     width: 60vw;
     margin: 2rem auto;
-  }
-  @include desktop {
-    display: none;
   }
 }
 
@@ -346,8 +347,8 @@ a {
     align-items: center;
   }
   &--img {
+    width: 375px;
     @include mobile {
-      width: 100%;
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
@@ -362,8 +363,7 @@ a {
       text-align: center;
     }
     @include desktop {
-      //   margin-top: 5rem;
-      //   margin-left: 13rem;
+      text-align: left;
     }
   }
   &--textbox1 {
@@ -379,7 +379,6 @@ a {
     font-family: $overpass-semibold-font;
     color: $darkblue-headingtext;
     margin: 0 auto;
-    width: 80vw;
   }
   &--description {
     font-family: "Overpass", sans-serif;
@@ -425,6 +424,10 @@ a {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 600px;
+  @include desktop {
+    background-position: -47% 66%;
+    background-size: 990px;
+  }
 }
 .state__container {
   height: 625px;
@@ -446,18 +449,28 @@ a {
     width: 90vw;
     color: $white-text;
     margin: 0 auto;
+    @include desktop {
+      width: 0px;
+      text-align: left;
+    }
   }
   &--title {
     width: 85vw;
     margin-bottom: 1rem;
     padding-top: 10rem;
     font-family: $overpass-semibold-font;
+    @include desktop {
+      width: 23vw;
+    }
   }
   &--description {
     width: 71vw;
     margin: 0 auto;
     line-height: 1.7rem;
     font-family: "Overpass", sans-serif;
+    @include desktop {
+      width: 35vw;
+    }
   }
 }
 
@@ -550,6 +563,12 @@ footer {
     color: $footer-text;
     @include desktop {
       list-style: none;
+    }
+  }
+  &--li:hover {
+    cursor: pointer;
+    @include desktop {
+      border-bottom: 2px solid white;
     }
   }
 }
