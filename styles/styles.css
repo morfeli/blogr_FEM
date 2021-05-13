@@ -834,7 +834,7 @@ footer {
     display: none;
   }
   .mobile {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -843,7 +843,7 @@ footer {
     display: none;
   }
   .desktop {
-    display: block;
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=styles.css.map */
