@@ -234,7 +234,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   border-bottom: 2px solid white;
 }
 .sub-menu li:hover {
-  color: $darkgray-blue-bodytext;
+  color: $cta-hover-background;
   font-family: $overpass-semibold-font;
 }
 

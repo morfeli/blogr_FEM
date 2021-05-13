@@ -327,7 +327,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 }
 
 .sub-menu li:hover {
-  color: #4b5862;
+  color: #ff7a85;
   font-family: "Overpass SemiBold";
 }
 

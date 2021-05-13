@@ -15,18 +15,6 @@ hamburgerBtn.addEventListener("click", () => {
   navLink.style.left = navLink.style.left === "-100%" ? "0" : "-100%";
 });
 
-const changeArrowImg = () => {
-  const reswidth = screen.width;
-  for (const image of document.querySelectorAll(".menu-arrow")) {
-    if (reswidth >= 1440) {
-      image.src = "../images/icon-arrow-light.svg";
-    } else {
-      image.src = "../images/icon-arrow-dark.svg";
-    }
-  }
-};
-window.addEventListener("resize", changeArrowImg);
-
 document.getElementById("nav__links").addEventListener("click", function (e) {
   const tgt = e.target;
   if (tgt.classList.contains("menu-arrow-down")) {
