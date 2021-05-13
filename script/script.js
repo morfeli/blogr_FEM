@@ -15,13 +15,6 @@ hamburgerBtn.addEventListener("click", () => {
   navLink.style.left = navLink.style.left === "-100%" ? "0" : "-100%";
 });
 
-document.getElementById("nav__links").addEventListener("click", function (e) {
-  const tgt = e.target;
-  if (tgt.classList.contains("menu-arrow-down")) {
-    tgt.classList.toggle("open");
-  }
-});
-
 // window.addEventListener("mouseup", (event) => {
 //   let box = document.querySelector(".sub-menu.open");
 //   if (event.target != box && event.target.parentNode != box) {

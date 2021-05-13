@@ -11,18 +11,18 @@
 
 header {
   background: linear-gradient(to bottom, $verylight-red, $lightred);
-  border-bottom-left-radius: 120px;
+  border-bottom-left-radius: 7.5rem;
 }
 
 .test {
-  height: 600px;
+  height: 37.5rem;
   background-image: url("../images/bg-pattern-intro.svg");
   background-position: 33% 33%;
   background-repeat: no-repeat;
-  background-size: 1205px;
+  background-size: 75.31rem;
   @include desktop {
     background-position: 25% 52%;
-    background-size: 3233px;
+    background-size: 202rem;
   }
 }
 
@@ -30,7 +30,7 @@ header {
   width: 95vw;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding-top: 2rem;
   margin-bottom: 7rem;
   color: $white-text;
@@ -68,14 +68,18 @@ header {
   }
 }
 
+.menu-arrow:hover {
+  transform: rotate(180deg);
+}
+
 .landing__button {
   text-align: center;
 
   &--start {
     font-family: $overpass-semibold-font;
-    width: 100px;
-    height: 40px;
-    border-radius: 33px;
+    width: 6.25rem;
+    height: 2.5rem;
+    border-radius: 2rem;
     background-color: white;
     border: none;
     color: $cta-text;
@@ -92,9 +96,9 @@ header {
 
   &--learn {
     font-family: $overpass-semibold-font;
-    width: 100px;
-    height: 40px;
-    border-radius: 33px;
+    width: 6.25rem;
+    height: 2.5rem;
+    border-radius: 2rem;
     border: 1px solid white;
     background-color: transparent;
     text-decoration: none;
@@ -128,9 +132,9 @@ input[type="checkbox"] {
 
 .middle {
   height: 3px;
-  width: 30px;
+  width: 1.875rem;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   position: absolute;
   transition: 0.3s ease;
 }
@@ -138,9 +142,9 @@ input[type="checkbox"] {
 .top {
   bottom: 5px;
   height: 3px;
-  width: 30px;
+  width: 1.875rem;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   position: absolute;
   transition: 0.3s ease;
 }
@@ -148,23 +152,23 @@ input[type="checkbox"] {
 .bottom {
   top: 10px;
   height: 3px;
-  width: 30px;
+  width: 1.875rem;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   position: absolute;
   transition: 0.3s ease;
 }
 
 input[type="checkbox"]:checked ~ .hamburger .top {
   transform: rotate(-50deg);
-  width: 25px;
+  width: 1.56rem;
   transform-origin: right;
   top: -10px;
 }
 
 input[type="checkbox"]:checked ~ .hamburger .bottom {
   transform: rotate(50deg);
-  width: 25px;
+  width: 1.56rem;
   transform-origin: right;
   top: 10px;
 }
@@ -177,7 +181,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 
 .nav__links {
   display: flex;
-  width: 40vw;
+  width: 50vw;
   justify-content: space-between;
   align-items: center;
   @include mobile {
@@ -256,16 +260,6 @@ a {
   }
 }
 
-.menu-arrow-down {
-  transform: rotate(0deg);
-  transition: 0.3s linear;
-}
-
-.menu-arrow-down.open {
-  transform: rotate(180deg);
-  transition: 0.3s linear;
-}
-
 .login__container {
   @include mobile {
     display: flex;
@@ -292,13 +286,13 @@ a {
   cursor: pointer;
   width: 8vw;
   height: 4.2vh;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: white;
   color: $cta-text;
   @include mobile {
     width: 30vw;
     height: 6vh;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     background-color: $cta-text;
     color: white;
     margin: 0 auto;
@@ -364,7 +358,7 @@ a {
     align-items: center;
   }
   &--img {
-    width: 375px;
+    width: 23.43rem;
     @include mobile {
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -403,7 +397,7 @@ a {
   &--description {
     font-family: "Overpass", sans-serif;
     color: $darkgray-blue-bodytext;
-    padding-top: 20px;
+    padding-top: 1.25rem;
     line-height: 1.5rem;
     width: 80vw;
     margin: 0 auto;
@@ -424,15 +418,15 @@ a {
     margin-top: -30rem;
   }
   &--img {
-    width: 328px;
-    height: 347px;
+    width: 20.5rem;
+    height: 21.68rem;
     position: relative;
-    top: 185px;
+    top: 11.56rem;
     @include desktop {
-      width: 472px;
-      height: 499px;
-      top: 410px;
-      left: 105px;
+      width: 29.5rem;
+      height: 31.18rem;
+      top: 25.62rem;
+      left: 6.56rem;
     }
   }
 }
@@ -443,28 +437,28 @@ a {
   background-image: url("../images/bg-pattern-circles.svg");
   background-position: 50% 160%;
   background-repeat: no-repeat;
-  background-size: 610px;
+  background-size: 38.125rem;
   @include desktop {
     background-position: -47% 66%;
-    background-size: 990px;
+    background-size: 61.875rem;
   }
 }
 .state__container {
   overflow: hidden;
-  height: 450px;
+  height: 28.125rem;
   margin-bottom: 2rem;
   background: linear-gradient(
     to bottom,
     $verydark-gray-blue,
     $verydark-desatu-blue
   );
-  border-top-right-radius: 120px;
-  border-bottom-left-radius: 120px;
+  border-top-right-radius: 7.5rem;
+  border-bottom-left-radius: 7.5rem;
   @include mobile {
-    height: 625px;
+    height: 39rem;
   }
   @include desktop {
-    height: 400px;
+    height: 16rem;
   }
 
   &--textbox {
@@ -507,11 +501,11 @@ a {
   }
 
   &--img {
-    width: 375px;
+    width: 23.43rem;
     @include desktop {
       width: 50vw;
       position: relative;
-      right: 202px;
+      right: 12.625rem;
     }
   }
   &--textbox {
@@ -550,7 +544,7 @@ footer {
   text-align: center;
   background-color: $darkblack-blue-footer-bckgrd;
   color: $white-text;
-  border-top-right-radius: 80px;
+  border-top-right-radius: 5rem;
   @include desktop {
     display: flex;
     align-items: baseline;
@@ -566,13 +560,13 @@ footer {
 }
 
 .footer__container {
-  height: 600px;
+  height: 37.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: "Overpass", sans-serif;
   @include desktop {
-    height: 300px;
+    height: 18.75rem;
     width: 60vw;
     margin-left: 10rem;
     flex-direction: row;
