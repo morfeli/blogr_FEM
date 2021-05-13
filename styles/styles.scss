@@ -595,3 +595,23 @@ footer {
     }
   }
 }
+
+@media (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 801px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
