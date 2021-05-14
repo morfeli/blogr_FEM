@@ -237,10 +237,6 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
 .parent a:hover {
   border-bottom: 2px solid white;
 }
-.sub-menu li:hover {
-  color: $cta-hover-background;
-  font-family: $overpass-semibold-font;
-}
 
 .divider {
   @include mobile {
@@ -336,6 +332,10 @@ a {
   }
 }
 
+.sub-menu li:hover {
+  color: $cta-hover-background;
+  font-family: $overpass-semibold-font;
+}
 //  Designed for the future
 
 .future__heading {
@@ -588,6 +588,16 @@ footer {
       border-bottom: 2px solid white;
     }
   }
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  margin-right: 2rem;
 }
 
 @media (max-width: 800px) {
