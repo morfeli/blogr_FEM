@@ -212,21 +212,10 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     align-items: center;
     list-style: none;
     cursor: pointer;
-    display: inline-block;
     @include mobile {
       margin-top: 0.7rem;
       color: $darkblue-headingtext;
     }
-  }
-}
-.desktop__nav {
-  display: flex;
-  margin-right: 5px;
-  @include mobile {
-    flex-direction: column;
-  }
-  @include desktop {
-    flex-direction: row;
   }
 }
 
