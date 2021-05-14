@@ -27,6 +27,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Javascript for mobile menu
+- Figma
 
 
 ### What I learned
