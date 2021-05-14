@@ -34,7 +34,8 @@
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background: linear-gradient(to bottom, #ff8f70, #ff3d54);
-  border-bottom-left-radius: 7.5rem;
+  border-bottom-left-radius: 8.5rem;
+  overflow: hidden;
 }
 
 .test {
@@ -90,6 +91,13 @@ header {
 .landing__container--title {
   margin-bottom: 1rem;
   font-family: "Overpass SemiBold";
+}
+
+@media (max-width: 375px) {
+  .landing__container--title {
+    width: 75vw;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -280,6 +288,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
           align-items: center;
   list-style: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 @media (max-width: 375px) {
@@ -629,7 +638,7 @@ a {
 
 @media (min-width: 1440px) {
   .state__container {
-    height: 16rem;
+    height: 25rem;
   }
 }
 

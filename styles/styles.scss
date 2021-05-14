@@ -11,7 +11,8 @@
 
 header {
   background: linear-gradient(to bottom, $verylight-red, $lightred);
-  border-bottom-left-radius: 7.5rem;
+  border-bottom-left-radius: 8.5rem;
+  overflow: hidden;
 }
 
 .test {
@@ -55,6 +56,10 @@ header {
   &--title {
     margin-bottom: 1rem;
     font-family: $overpass-semibold-font;
+    @include mobile {
+      width: 75vw;
+      font-size: 2rem;
+    }
     @include desktop {
       font-size: 4rem;
     }
@@ -207,6 +212,7 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
     align-items: center;
     list-style: none;
     cursor: pointer;
+    display: inline-block;
     @include mobile {
       margin-top: 0.7rem;
       color: $darkblue-headingtext;
@@ -458,7 +464,7 @@ a {
     height: 39rem;
   }
   @include desktop {
-    height: 16rem;
+    height: 25rem;
   }
 
   &--textbox {
