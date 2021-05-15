@@ -13,6 +13,10 @@ header {
   background: linear-gradient(to bottom, $verylight-red, $lightred);
   border-bottom-left-radius: 8.5rem;
   overflow: hidden;
+  @include desktop {
+    background-position: 25% 52%;
+    background-size: 202rem;
+  }
 }
 
 .test {
@@ -27,24 +31,39 @@ header {
   }
 }
 
-.nav__container {
-  width: 95vw;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
-  margin-bottom: 7rem;
-  color: $white-text;
+  color: white;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+}
+.navbar__heading {
+  margin: 0.5rem;
+}
 
-  &--heading {
-    font-family: $overpass-semibold-font;
-    margin-left: 1rem;
+.navbar ul {
+  display: flex;
+}
 
-    @include desktop {
-      margin-left: 5rem;
-      font-size: 3rem;
-    }
-  }
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1rem;
+}
+
+.navbar li a:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
 }
 
 .landing__container {
@@ -119,119 +138,136 @@ header {
 
 //  Menu Icon
 
-input[type="checkbox"] {
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
   display: none;
-  visibility: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
-.hamburger {
-  position: relative;
-  top: -7px;
-  cursor: pointer;
-  justify-content: center;
-  display: none;
-  @include mobile {
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
     display: flex;
   }
+
+  .navbar-links {
+    display: none;
+  }
 }
 
-.middle {
-  height: 3px;
-  width: 1.875rem;
-  background-color: white;
-  border-radius: 3.125rem;
-  position: absolute;
-  transition: 0.3s ease;
-}
+// input[type="checkbox"] {
+//   display: none;
+//   visibility: hidden;
+// }
 
-.top {
-  bottom: 5px;
-  height: 3px;
-  width: 1.875rem;
-  background-color: white;
-  border-radius: 3.125rem;
-  position: absolute;
-  transition: 0.3s ease;
-}
+// .hamburger {
+//   position: relative;
+//   top: -7px;
+//   cursor: pointer;
+//   justify-content: center;
+//   display: none;
+//   @include mobile {
+//     display: flex;
+//   }
+// }
 
-.bottom {
-  top: 10px;
-  height: 3px;
-  width: 1.875rem;
-  background-color: white;
-  border-radius: 3.125rem;
-  position: absolute;
-  transition: 0.3s ease;
-}
+// .middle {
+//   height: 3px;
+//   width: 1.875rem;
+//   background-color: white;
+//   border-radius: 3.125rem;
+//   position: absolute;
+//   transition: 0.3s ease;
+// }
 
-input[type="checkbox"]:checked ~ .hamburger .top {
-  transform: rotate(-50deg);
-  width: 1.56rem;
-  transform-origin: right;
-  top: -10px;
-}
+// .top {
+//   bottom: 5px;
+//   height: 3px;
+//   width: 1.875rem;
+//   background-color: white;
+//   border-radius: 3.125rem;
+//   position: absolute;
+//   transition: 0.3s ease;
+// }
 
-input[type="checkbox"]:checked ~ .hamburger .bottom {
-  transform: rotate(50deg);
-  width: 1.56rem;
-  transform-origin: right;
-  top: 10px;
-}
+// .bottom {
+//   top: 10px;
+//   height: 3px;
+//   width: 1.875rem;
+//   background-color: white;
+//   border-radius: 3.125rem;
+//   position: absolute;
+//   transition: 0.3s ease;
+// }
 
-input[type="checkbox"]:checked ~ .hamburger .middle {
-  transform: translateX(-20px);
-  opacity: 0;
-}
+// input[type="checkbox"]:checked ~ .hamburger .top {
+//   transform: rotate(-50deg);
+//   width: 1.56rem;
+//   transform-origin: right;
+//   top: -10px;
+// }
+
+// input[type="checkbox"]:checked ~ .hamburger .bottom {
+//   transform: rotate(50deg);
+//   width: 1.56rem;
+//   transform-origin: right;
+//   top: 10px;
+// }
+
+// input[type="checkbox"]:checked ~ .hamburger .middle {
+//   transform: translateX(-20px);
+//   opacity: 0;
+// }
 // Nav Links
 
-.nav__links {
-  display: flex;
-  width: 50vw;
-  justify-content: space-between;
-  align-items: center;
-  @include mobile {
-    position: absolute;
-    top: 50px;
-    width: 80vw;
-    height: 80vh;
-    transition: 0.5s;
-    display: block;
-    text-align: center;
-    margin-top: 5rem;
-    margin-left: 2.5rem;
-    background-color: white;
-    color: white;
-    border-radius: 5px;
-  }
-  @include desktop {
-    width: 70vw;
-  }
+// .nav__links {
+//   display: flex;
+//   width: 50vw;
+//   justify-content: space-between;
+//   align-items: center;
+//   @include mobile {
+//     position: absolute;
+//     top: 50px;
+//     width: 80vw;
+//     height: 80vh;
+//     transition: 0.5s;
+//     display: block;
+//     text-align: center;
+//     margin-top: 5rem;
+//     margin-left: 2.5rem;
+//     background-color: white;
+//     color: white;
+//     border-radius: 5px;
+//   }
+//   @include desktop {
+//     width: 70vw;
+//   }
+// }
 
-  li {
-    font-family: $overpass-semibold-font;
-    align-items: center;
-    list-style: none;
-    cursor: pointer;
-    @include mobile {
-      margin-top: 0.7rem;
-      color: $darkblue-headingtext;
-    }
-  }
-}
+// .parent {
+//   @include mobile {
+//     margin-bottom: 2rem;
+//   }
+//   @include desktop {
+//     display: inline-block;
+//     margin-right: 2rem;
+//   }
+// }
 
-.parent {
-  @include mobile {
-    margin-bottom: 2rem;
-  }
-  @include desktop {
-    display: inline-block;
-    margin-right: 2rem;
-  }
-}
-
-.parent a:hover {
-  border-bottom: 2px solid white;
-}
+// .parent a:hover {
+//   border-bottom: 2px solid white;
+// }
 
 .divider {
   @include mobile {
@@ -242,14 +278,14 @@ input[type="checkbox"]:checked ~ .hamburger .middle {
   visibility: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  @include mobile {
-    color: $darkblue-headingtext;
-  }
-}
+// a {
+//   text-decoration: none;
+//   color: white;
+//   text-align: center;
+//   @include mobile {
+//     color: $darkblue-headingtext;
+//   }
+// }
 
 .login__container {
   @include mobile {

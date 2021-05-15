@@ -10,89 +10,28 @@
   <body>
     <header>
       <div class="test">
-        <nav class="nav__container">
-          <img
-            class="nav__container--heading"
-            src="./images/logo.svg"
-            alt="logo"
-          />
+        <nav class="navbar">
+          <img class="navbar__heading" src="./images/logo.svg" alt="logo" />
 
-          <ul id="nav__links" class="nav__links">
-            <li class="parent">
-              <a href="#">Product</a>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
 
-              <img
-                class="menu-arrow mobile"
-                src="images/icon-arrow-dark.svg"
-                alt="arrow"
-              />
-              <img
-                class="menu-arrow desktop"
-                src="./images/icon-arrow-light.svg"
-                alt="arrow"
-              />
-              <ul class="sub-menu">
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul>
-            </li>
-            <li class="parent">
-              <a href="#">Company</a>
-              <img
-                class="menu-arrow mobile"
-                src="images/icon-arrow-dark.svg"
-                alt="arrow"
-              />
-              <img
-                class="menu-arrow desktop"
-                src="./images/icon-arrow-light.svg"
-                alt="arrow"
-              />
-              <ul class="sub-menu">
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </ul>
-            </li>
-            <li class="parent">
-              <a href="#">Connect</a>
-              <img
-                class="menu-arrow mobile"
-                src="images/icon-arrow-dark.svg"
-                alt="arrow"
-              />
-              <img
-                class="menu-arrow desktop"
-                src="./images/icon-arrow-light.svg"
-                alt="arrow"
-              />
-              <ul class="sub-menu">
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
-              </ul>
-            </li>
-
-            <hr class="divider" />
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Connect</a></li>
+            </ul>
             <div class="login__container">
               <a class="log-in" href="#">Login</a>
               <button class="signup-btn">Sign Up</button>
             </div>
-          </ul>
-
-          <label>
-            <input type="checkbox" />
-            <div id="hamburger" class="hamburger">
-              <div class="top"></div>
-              <div class="middle"></div>
-              <div class="bottom"></div>
-            </div>
-          </label>
+          </div>
         </nav>
+
         <div class="landing__container">
           <h2 class="landing__container--title">
             A modern publishing platform
@@ -234,9 +173,7 @@
           <ul class="footer__container--lists">
             <li class="footer__container--li">Contact</li>
             <li class="footer__container--li">Newsletter</li>
-            <li class="footer__container--li">
-              LinkedIn hello bye did it work
-            </li>
+            <li class="footer__container--li">LinkedIn</li>
           </ul>
         </div>
       </div>

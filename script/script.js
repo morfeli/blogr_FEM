@@ -1,6 +1,6 @@
 const arrowButton = document.querySelectorAll(".menu-arrow");
 const hamburgerBtn = document.getElementById("hamburger");
-const navLink = document.querySelector(".nav__links");
+// const navLink = document.querySelector(".nav__links");
 const reswidth = screen.width;
 
 arrowButton.forEach((el) =>
@@ -10,10 +10,10 @@ arrowButton.forEach((el) =>
   })
 );
 
-navLink.style.left = "-100%";
-hamburgerBtn.addEventListener("click", () => {
-  navLink.style.left = navLink.style.left === "-100%" ? "0" : "-100%";
-});
+// navLink.style.left = "-100%";
+// hamburgerBtn.addEventListener("click", () => {
+//   navLink.style.left = navLink.style.left === "-100%" ? "0" : "-100%";
+// });
 
 // window.addEventListener("mouseup", (event) => {
 //   let box = document.querySelector(".sub-menu.open");
