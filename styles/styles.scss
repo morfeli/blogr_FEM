@@ -167,7 +167,7 @@ header {
     flex-direction: column;
     background-color: white;
     width: 60%;
-    height: 40vh;
+    height: 80vh;
     margin: 2rem auto;
     text-align: center;
     display: none;
@@ -182,7 +182,12 @@ header {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .navbar li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
   .navbar-links ul {
     flex-direction: column;
   }
@@ -198,7 +203,35 @@ header {
     position: absolute;
     margin: 0 auto;
     top: 85px;
-    left: 80px;
+    left: 20%;
+  }
+  .sub-menu.open {
+    display: block;
+    flex-direction: column;
+    background-color: $footer-text;
+    width: 50%;
+    color: $darkblue-headingtext;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    z-index: 1;
+    margin: 0 auto;
+  }
+  .parent {
+    position: relative;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-arrow {
+    display: none;
+  }
+
+  .navbar li {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -314,15 +347,6 @@ header {
   visibility: hidden;
 }
 
-// a {
-//   text-decoration: none;
-//   color: white;
-//   text-align: center;
-//   @include mobile {
-//     color: $darkblue-headingtext;
-//   }
-// }
-
 .login__container {
   @include mobile {
     display: flex;
@@ -344,18 +368,10 @@ header {
 }
 
 .signup-btn {
-  //   font-family: $ubuntu-med-font;
-  //   border: 0px;
-  //   cursor: pointer;
-  //   width: 8vw;
-  //   height: 4.2vh;
-  //   border-radius: 1.25rem;
-  //   background-color: white;
-  //   color: $cta-text;
-
   width: 100px;
   height: 6vh;
   border-radius: 2.5rem;
+  border: 0px;
   background-color: $cta-text;
   color: white;
   margin: 0 auto;
@@ -369,33 +385,8 @@ header {
   }
 }
 
-.sub-menu {
+ul .sub-menu {
   display: none;
-}
-
-.sub-menu.open {
-  position: absolute;
-  width: 10vw;
-  background-color: white;
-  color: black;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  margin: 6px auto;
-  padding-left: 0.3rem;
-  border-radius: 5px;
-  @include mobile {
-    display: flex;
-    flex-direction: column;
-    background-color: $footer-text;
-    width: 60vw;
-    margin: 0 auto;
-    color: $darkblue-headingtext;
-    border-radius: 5px;
-    position: relative;
-    left: 5px;
-    text-align: center;
-  }
 }
 
 .sub-menu li:hover {
