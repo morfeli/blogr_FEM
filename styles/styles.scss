@@ -73,8 +73,10 @@ header {
   color: $white-text;
 
   &--title {
+    margin: 7rem auto;
     margin-bottom: 1rem;
     font-family: $overpass-semibold-font;
+    font-size: 2.2rem;
     @include mobile {
       width: 75vw;
       font-size: 2rem;
@@ -162,7 +164,41 @@ header {
   }
 
   .navbar-links {
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    height: 40vh;
+    margin: 2rem auto;
+    text-align: center;
     display: none;
+  }
+
+  .navbar-links ul a {
+    color: black;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .login__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: 85px;
+    left: 80px;
   }
 }
 
@@ -308,23 +344,22 @@ header {
 }
 
 .signup-btn {
-  font-family: $ubuntu-med-font;
-  border: 0px;
-  cursor: pointer;
-  width: 8vw;
-  height: 4.2vh;
-  border-radius: 1.25rem;
-  background-color: white;
-  color: $cta-text;
-  @include mobile {
-    width: 30vw;
-    height: 6vh;
-    border-radius: 2.5rem;
-    background-color: $cta-text;
-    color: white;
-    margin: 0 auto;
-    outline: none;
-  }
+  //   font-family: $ubuntu-med-font;
+  //   border: 0px;
+  //   cursor: pointer;
+  //   width: 8vw;
+  //   height: 4.2vh;
+  //   border-radius: 1.25rem;
+  //   background-color: white;
+  //   color: $cta-text;
+
+  width: 100px;
+  height: 6vh;
+  border-radius: 2.5rem;
+  background-color: $cta-text;
+  color: white;
+  margin: 0 auto;
+  outline: none;
 }
 
 .signup-btn:hover {

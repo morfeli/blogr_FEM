@@ -1,6 +1,6 @@
 const arrowButton = document.querySelectorAll(".menu-arrow");
-const hamburgerBtn = document.getElementById("hamburger");
-// const navLink = document.querySelector(".nav__links");
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const reswidth = screen.width;
 
 arrowButton.forEach((el) =>
@@ -9,6 +9,10 @@ arrowButton.forEach((el) =>
     subMenu.classList.toggle("open");
   })
 );
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});
 
 // navLink.style.left = "-100%";
 // hamburgerBtn.addEventListener("click", () => {
