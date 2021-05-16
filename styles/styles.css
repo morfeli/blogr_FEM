@@ -224,14 +224,19 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
+  .mobile-arrow {
+    position: relative;
+    left: 50px;
+    bottom: 28px;
+  }
   .navbar-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: white;
-    width: 60%;
-    height: 80vh;
+    width: 80%;
+    height: 551px;
     margin: 2rem auto;
     text-align: center;
     display: none;
@@ -253,6 +258,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -284,27 +293,23 @@ header {
     position: absolute;
     margin: 0 auto;
     top: 85px;
-    left: 20%;
+    left: 10%;
   }
   .sub-menu.open {
     display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     background-color: #c8c8cb;
-    width: 50%;
+    width: 70%;
     color: #1f3f5b;
     border-radius: 5px;
     text-align: center;
-    position: absolute;
-    top: 35px;
-    left: 25%;
-    z-index: 1;
     margin: 0 auto;
-  }
-  .parent {
     position: relative;
+    bottom: 10%;
+    left: 2%;
+    padding: 1rem;
+  }
+  .sub-menu.open li {
+    margin-bottom: 0.7rem;
   }
 }
 
