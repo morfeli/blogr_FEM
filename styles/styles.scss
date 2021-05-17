@@ -421,6 +421,9 @@ ul .sub-menu {
   color: $cta-hover-background;
   font-family: $overpass-semibold-font;
 }
+.sub-menu li {
+  cursor: pointer;
+}
 //  Designed for the future
 
 .future__heading {
@@ -630,7 +633,7 @@ footer {
   background-color: $darkblack-blue-footer-bckgrd;
   color: $white-text;
   border-top-right-radius: 5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
   @include desktop {
     display: flex;
     align-items: baseline;
