@@ -60,6 +60,10 @@ header {
   }
 }
 
+.navbar-item {
+  font-family: "Overpass SemiBold";
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,11 +105,13 @@ header {
   text-decoration: none;
   color: white;
   display: block;
-  padding: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.8rem;
 }
 
 .navbar li a:hover {
   border-bottom: 2px solid white;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -219,10 +225,19 @@ header {
 }
 
 @media (max-width: 768px) {
+  .divider {
+    visibility: visible;
+    width: 30vw;
+    margin: 2rem auto;
+  }
+  .navbar {
+    padding-top: 1rem;
+  }
   .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1.3rem;
   }
   .mobile-arrow {
     position: relative;
@@ -236,7 +251,7 @@ header {
             flex-direction: column;
     background-color: white;
     width: 80%;
-    height: 551px;
+    height: auto;
     margin: 2rem auto;
     text-align: center;
     display: none;
@@ -285,6 +300,9 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar-links.active {
     display: -webkit-box;
@@ -294,10 +312,11 @@ header {
     margin: 0 auto;
     top: 85px;
     left: 10%;
+    padding-bottom: 2rem;
   }
   .sub-menu.open {
     display: block;
-    background-color: #c8c8cb;
+    background-color: lightgray;
     width: 70%;
     color: #1f3f5b;
     border-radius: 5px;
@@ -310,10 +329,31 @@ header {
   }
   .sub-menu.open li {
     margin-bottom: 0.7rem;
+    font-family: "Overpass SemiBold";
+  }
+  .log-in {
+    color: #4b5862;
+    margin-bottom: 2rem;
+    margin-left: 25px;
   }
 }
 
 @media (min-width: 769px) {
+  .divider {
+    display: none;
+  }
+  .navbar {
+    padding-top: 3rem;
+  }
+  .navbar__heading {
+    margin-left: 5rem;
+  }
+  .parent {
+    margin-left: 2rem;
+  }
+  .login__container {
+    margin-right: 7rem;
+  }
   .mobile-arrow {
     display: none;
   }
@@ -325,18 +365,118 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
+  .navbar li a {
+    padding: 0;
+  }
+  .sub-menu.open {
+    position: absolute;
+    top: 100px;
+    height: auto;
+    width: 15vw;
+    background-color: white;
+    color: black;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 6px auto;
+    padding-left: 0.3rem;
+    border-radius: 5px;
+  }
+  .sub-menu.open li {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Ubuntu Medium";
+  }
+  .log-in {
+    color: white;
+  }
 }
 
-.divider {
+input[type="checkbox"] {
+  display: none;
   visibility: hidden;
 }
 
-@media (max-width: 375px) {
-  .divider {
-    visibility: visible;
-    width: 60vw;
-    margin: 2rem auto;
-  }
+.hamburger {
+  position: relative;
+  top: -7px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.middle {
+  height: 3px;
+  width: 1.875rem;
+  background-color: white;
+  border-radius: 3.125rem;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: white;
+  border-radius: 3.125rem;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: white;
+  border-radius: 3.125rem;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .hamburger .top {
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  width: 1.56rem;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  top: -10px;
+}
+
+input[type="checkbox"]:checked ~ .hamburger .bottom {
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  width: 1.56rem;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  top: 10px;
+}
+
+input[type="checkbox"]:checked ~ .hamburger .middle {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  opacity: 0;
+}
+
+.login__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.6rem;
 }
 
 @media (max-width: 375px) {
@@ -354,20 +494,7 @@ header {
 .log-in {
   text-decoration: none;
   font-family: "Overpass SemiBold";
-}
-
-@media (max-width: 375px) {
-  .log-in {
-    color: #1f3f5b;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .log-in {
-    color: white;
-    padding-right: 2rem;
-  }
+  padding-right: 2rem;
 }
 
 .signup-btn {
@@ -379,6 +506,7 @@ header {
   color: white;
   margin: 0 auto;
   outline: none;
+  font-family: "Overpass SemiBold";
 }
 
 @media (min-width: 1440px) {
@@ -678,6 +806,7 @@ footer {
   background-color: #25252d;
   color: white;
   border-top-right-radius: 5rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 1440px) {
