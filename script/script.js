@@ -12,3 +12,10 @@ arrowButton.forEach((el) =>
 hamburgerBtn.addEventListener("click", () => {
   navBarLinks.classList.toggle("active");
 });
+
+// window.addEventListener("mouseup", (event) => {
+//   let box = document.querySelector(".sub-menu.open");
+//   if (event.target != box && event.target.parentNode != box) {
+//     box.style.display = "none";
+//   }
+// });

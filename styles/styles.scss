@@ -154,14 +154,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -357,21 +352,21 @@ input[type="checkbox"] {
   transition: 0.3s ease;
 }
 
-input[type="checkbox"]:checked ~ .hamburger .top {
+input[type="checkbox"]:checked ~ .toggle-button .top {
   transform: rotate(-50deg);
   width: 1.56rem;
   transform-origin: right;
   top: -10px;
 }
 
-input[type="checkbox"]:checked ~ .hamburger .bottom {
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
   transform: rotate(50deg);
   width: 1.56rem;
   transform-origin: right;
   top: 10px;
 }
 
-input[type="checkbox"]:checked ~ .hamburger .middle {
+input[type="checkbox"]:checked ~ .toggle-button .middle {
   transform: translateX(-20px);
   opacity: 0;
 }

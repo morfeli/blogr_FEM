@@ -214,14 +214,10 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -445,7 +441,7 @@ input[type="checkbox"] {
   transition: 0.3s ease;
 }
 
-input[type="checkbox"]:checked ~ .hamburger .top {
+input[type="checkbox"]:checked ~ .toggle-button .top {
   -webkit-transform: rotate(-50deg);
           transform: rotate(-50deg);
   width: 1.56rem;
@@ -454,7 +450,7 @@ input[type="checkbox"]:checked ~ .hamburger .top {
   top: -10px;
 }
 
-input[type="checkbox"]:checked ~ .hamburger .bottom {
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
   width: 1.56rem;
@@ -463,7 +459,7 @@ input[type="checkbox"]:checked ~ .hamburger .bottom {
   top: 10px;
 }
 
-input[type="checkbox"]:checked ~ .hamburger .middle {
+input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
   opacity: 0;
