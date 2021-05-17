@@ -399,6 +399,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin: 0 auto;
   outline: none;
   font-family: $overpass-semibold-font;
+  cursor: pointer;
 }
 
 .signup-btn:hover {
