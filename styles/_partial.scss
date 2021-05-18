@@ -24,30 +24,37 @@ $ubuntu-reg-font: "Ubuntu Regular";
 $ubuntu-med-font: "Ubuntu Medium";
 $ubuntu-bold-font: "Ubuntu Bold";
 
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
 //  Font-Face Variables
 @font-face {
   font-family: "Overpass Regular";
-  src: url("../Fonts/Overpass/Overpass-Light.ttf") format(woff2);
+  src: url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap")
+    format(woff2);
 }
 
 @font-face {
   font-family: "Overpass SemiBold";
-  src: url("../Fonts/Overpass/Overpass-SemiBold.ttf") format(woff2);
+  src: url("https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap")
+    format(woff2);
 }
 
 @font-face {
   font-family: "Ubuntu Regular";
-  src: url("../Fonts/Ubuntu/Ubuntu-Regular.ttf") format(woff2);
+  src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap")
+    format(woff2);
 }
 
 @font-face {
   font-family: "Ubuntu Medium";
-  src: url("../Fonts/Ubuntu/Ubuntu-Medium.ttf") format(woff2);
+  src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap")
+    format(woff2);
 }
 
 @font-face {
-  font-family: "Overpass Bold";
-  src: url("../Fonts/Ubuntu/Ubuntu-Bold.ttf") format(woff2);
+  font-family: "Ubuntu Bold";
+  src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap")
+    format(woff2);
 }
 
 //  Media Query
