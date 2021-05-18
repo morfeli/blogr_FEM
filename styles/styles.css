@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -36,7 +35,8 @@ header {
 }
 
 .navbar-item {
-  font-family: "Overpass SemiBold";
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }
 
 .navbar {
@@ -139,7 +139,8 @@ header {
 }
 
 .landing__button--start {
-  font-family: "Overpass SemiBold";
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   width: 6.25rem;
   height: 2.5rem;
   border-radius: 2rem;
@@ -161,7 +162,8 @@ header {
 }
 
 .landing__button--learn {
-  font-family: "Overpass SemiBold";
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   width: 6.25rem;
   height: 2.5rem;
   border-radius: 2rem;
@@ -301,7 +303,8 @@ header {
   }
   .sub-menu.open li {
     margin-bottom: 0.7rem;
-    font-family: "Overpass SemiBold";
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
   }
   .log-in {
     color: #4b5862;
@@ -363,7 +366,8 @@ header {
     margin-top: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
-    font-family: "Ubuntu Medium";
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
   }
   .log-in {
     color: white;
@@ -465,7 +469,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .log-in {
   text-decoration: none;
-  font-family: "Overpass SemiBold";
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   padding-right: 2rem;
 }
 
@@ -478,7 +483,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: #ff525d;
   margin: 0 auto;
   outline: none;
-  font-family: "Overpass SemiBold";
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -495,7 +501,8 @@ ul .sub-menu {
 
 .sub-menu li:hover {
   color: #ff7a85;
-  font-family: "Overpass SemiBold";
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
 }
 
 .sub-menu li {
@@ -505,7 +512,8 @@ ul .sub-menu {
 .future__heading {
   margin-top: 3rem;
   text-align: center;
-  font-family: "Overpass SemiBold";
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
   color: #1f3f5b;
 }
 
@@ -579,7 +587,8 @@ ul .sub-menu {
   width: 53vw;
   line-height: 2rem;
   letter-spacing: 1px;
-  font-family: "Overpass SemiBold";
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
   color: #1f3f5b;
   margin: 0 auto;
 }
@@ -690,7 +699,8 @@ ul .sub-menu {
   width: 85vw;
   margin-bottom: 1rem;
   padding-top: 10rem;
-  font-family: "Overpass SemiBold";
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
 }
 
 @media (min-width: 1440px) {
@@ -756,7 +766,8 @@ ul .sub-menu {
 
 .free__container--title {
   margin-bottom: 1rem;
-  font-family: "Overpass SemiBold";
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
   color: #1f3f5b;
 }
 
@@ -799,7 +810,6 @@ footer {
 
 .footer__heading {
   margin-bottom: 3rem;
-  font-family: "Overpass SemiBold";
 }
 
 @media (min-width: 1440px) {
