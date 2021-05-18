@@ -499,8 +499,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 6vh;
   border-radius: 2.5rem;
   border: 0px;
-  background-color: #ff525d;
-  color: white;
+  background-color: white;
+  color: #ff525d;
   margin: 0 auto;
   outline: none;
   font-family: "Overpass SemiBold";

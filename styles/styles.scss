@@ -394,8 +394,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 6vh;
   border-radius: 2.5rem;
   border: 0px;
-  background-color: $cta-text;
-  color: white;
+  background-color: white;
+  color: $cta-text;
   margin: 0 auto;
   outline: none;
   font-family: $overpass-semibold-font;
