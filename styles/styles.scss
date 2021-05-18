@@ -253,6 +253,10 @@ header {
     margin-bottom: 2rem;
     margin-left: 25px;
   }
+  .signup-btn {
+    color: white;
+    background-color: $cta-text;
+  }
 }
 
 @media (min-width: 769px) {
@@ -312,6 +316,15 @@ header {
   }
   .log-in {
     color: white;
+  }
+  .signup-btn {
+    background-color: white;
+    color: $cta-text;
+  }
+
+  .signup-btn:hover {
+    color: white;
+    background-color: $cta-text;
   }
 }
 
@@ -400,20 +413,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 6vh;
   border-radius: 2.5rem;
   border: 0px;
-  background-color: white;
-  color: $cta-text;
   margin: 0 auto;
   outline: none;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   cursor: pointer;
-}
-
-.signup-btn:hover {
-  @include desktop {
-    background-color: $cta-hover-background;
-    color: white;
-  }
 }
 
 ul .sub-menu {
