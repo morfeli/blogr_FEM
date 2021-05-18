@@ -6,31 +6,6 @@
           box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Overpass Regular";
-  src: url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap") format(woff2);
-}
-
-@font-face {
-  font-family: "Overpass SemiBold";
-  src: url("https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap") format(woff2);
-}
-
-@font-face {
-  font-family: "Ubuntu Regular";
-  src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap") format(woff2);
-}
-
-@font-face {
-  font-family: "Ubuntu Medium";
-  src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap") format(woff2);
-}
-
-@font-face {
-  font-family: "Ubuntu Bold";
-  src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap") format(woff2);
-}
-
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background: linear-gradient(to bottom, #ff8f70, #ff3d54);
